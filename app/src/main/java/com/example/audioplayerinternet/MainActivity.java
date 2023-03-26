@@ -46,17 +46,17 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnPre
         try {
 
                 switch (view.getId()) {
-                    R.id.btnStream:
+                    case R.id.btnStream:
                     // код выполнения кнопки btnStream
                     // размещаем тост (контекст, сообщение, длительность сообщения)
-                    toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_SHORT); // инициализация
-                    toast.show(); // демонстрация тоста на экране
-                    mediaPlayer = new MediaPlayer(); // создание объекта медиа-плеера
-                    mediaPlayer.setDataSource(DATA_STREAM); // указание источника аудио
-                    mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC); // задает аудио-поток, который будет использован для проигрывания
-                    mediaPlayer.setOnPreparedListener(this); // ассинхронная подготовка плеера к проигрыванию
-                    mediaPlayer.prepareAsync(); // ассинхронная подготовка плейера к проигрыванию
-                    nameAudio = "РАДИО"; // инициализация названия контента
+                        toast = Toast.makeText(this, R.string.toast, Toast.LENGTH_SHORT); // инициализация
+                        toast.show(); // демонстрация тоста на экране
+                        mediaPlayer = new MediaPlayer(); // создание объекта медиа-плеера
+                        mediaPlayer.setDataSource(DATA_STREAM); // указание источника аудио
+                        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC); // задает аудио-поток, который будет использован для проигрывания
+                        mediaPlayer.setOnPreparedListener(this); // ассинхронная подготовка плеера к проигрыванию
+                        mediaPlayer.prepareAsync(); // ассинхронная подготовка плейера к проигрыванию
+                        nameAudio = "РАДИО"; // инициализация названия контента
 
                     break;
                 }
