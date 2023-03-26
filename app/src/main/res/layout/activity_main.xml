@@ -25,7 +25,7 @@
         android:layout_width="380dp"
         android:layout_height="140dp"
         android:layout_marginTop="30dp"
-        android:background="#E6FBFA"
+        android:background="#DDF6F5"
         android:gravity="center"
         android:hint="Название мелодии"
         android:textColor="#047DA3"
